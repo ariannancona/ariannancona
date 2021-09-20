@@ -1,0 +1,656 @@
+/* MOBILE */
+@media (max-width:400px) {
+    body {
+        padding: 40px 20px; 
+        padding
+        width: 100%;
+    }
+    
+    
+    .menu nav{
+        padding-right: 15%;
+    }
+
+
+.identikitMobile {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+    
+    
+    .logoPoster{
+        width: 50%;
+        left: -10px;
+        z-index: 9999;
+        top: -55px;
+        transform: rotate(-1deg);
+    }
+
+    .laVidaDespues {
+        width: 70%;
+        height: auto;
+        position: absolute;
+        top: 150px;
+        left: 35%;
+    }
+
+    .A6gif {
+        width: 80%;
+        position: absolute;
+        top: 370px;
+        transform: rotate(2deg);
+    }
+    
+    
+    .locandina {
+        width: 40%;
+        position: absolute;
+        top: 570px;
+        left: 50%;
+        z-index: 444;
+        transform: rotate(2deg);
+    }
+
+    .tappeti {
+        width: 160%;
+        height: auto;
+        justify-content: center;
+        transform: rotate(8deg);
+        position: absolute;
+        left: -150px;
+        top: 550px;
+    }
+    
+     .ermione {
+        width: 80%;
+        height: auto;
+        justify-content: center;
+        position: absolute;
+        top: 900px;
+        right: 20px;
+    }
+    
+         .row3 {
+        position: absolute;
+        top: 1250px;
+    }
+    
+    .folle{
+       position: absolute;
+        top: 0px;
+        margin-left: 40px;
+        z-index: 8888;
+        
+    }
+
+    .optical {
+        width: 80%;
+        height: auto;
+        position: absolute;
+        top: 450px;
+        right: 20px;
+        z-index: 8888;
+    }
+
+    .manifesti{
+        width: 100%;
+        height: auto;
+        margin-top: 50px;
+    }
+ 
+    
+      .camminare {
+        width: 110%;
+        height: auto;
+        position: absolute;
+        top: 2000px;
+    }
+
+   
+   .row4{
+        position: absolute;
+        top: 2300px;
+    }
+    
+    .sanctum{
+        width: 80%;
+        left: 12%;
+    }
+    
+    .lineeSanctum{
+        width: 140%;
+        height: auto;
+        position: relative;
+        z-index: 0;
+        top: -300px;
+        left: -30px;
+        
+    }
+    
+    .Tcontact{
+        background-color: white;
+        position: absolute;
+        top: 2900px;
+        transform: rotate(-1deg);
+        z-index: 444;
+    }
+    
+    .glitch{
+        width: 100%;
+        position: absolute;
+        top: 3400px;
+    }
+
+    footer {
+        position: relative;
+        top: 3500px;
+        margin-bottom: 20px;
+        width: 110%;
+        margin: 0 auto;
+    }
+    
+    footer a{
+        padding: 0px;
+        margin: 0px;
+    }
+
+}
+
+
+
+/* TABLET */
+@media (min-width: 401px) and (max-width:800px) {
+    body {
+        padding: 70px;
+    }
+
+
+    .identikitMobile {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+    
+    
+    .logoPoster{
+        width: 45%;
+        left: -40px;
+        z-index: 9999;
+        top: -100px;
+        transform: rotate(-1deg);
+    }
+
+
+    .locandina {
+        width: 40%;
+        position: absolute;
+        top: 1100px;
+        left: 60%;
+        z-index: 444;
+        transform: rotate(-2deg);
+    }
+
+
+    .laVidaDespues {
+        width: 80%;
+        height: auto;
+        position: absolute;
+        top: 280px;
+        left: 30%;
+    }
+
+    .A6gif {
+        width: 80%;
+        position: absolute;
+        top: 700px;
+        transform: rotate(2deg);
+    }
+
+    .tappeti {
+        width: 170%;
+        height: auto;
+        justify-content: center;
+        transform: rotate(8deg);
+        position: absolute;
+        left: -350px;
+        top: 1000px;
+    }
+    
+     .ermione {
+        width: 80%;
+        height: auto;
+        justify-content: center;
+        position: absolute;
+        top: 1700px;
+        right: 70px;
+    }
+    
+
+         .row3 {
+        position: absolute;
+        top: 220vh;
+    }
+    
+    .folle{
+       position: absolute;
+        top: 0px;
+        margin-left: 40px;
+        
+    }
+
+    .optical {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 100vh;
+        z-index: 8888;
+    }
+
+    .manifesti{
+        width: 100%;
+        height: auto;
+        margin-top: 50px;
+    }
+    
+    .optical {
+        width: 70%;
+        height: auto;
+        position: absolute;
+        top: 800px;
+        left: 20%;
+    }
+    
+      .camminare {
+        width: 90%;
+        height: auto;
+        position: absolute;
+        top: 3500px;
+        left: 18%;
+    }
+
+   
+   .row4{
+        position: absolute;
+        top: 380vh;
+    }
+    
+    .sanctum{
+        width: 40%;
+        left: 5%;
+    }
+    
+    .lineeSanctum{
+        width: 135%;
+        height: auto;
+        position: relative;
+        z-index: 0;
+        top: -400px;
+        left: -150px;
+        
+    }
+    
+    .Tcontact{
+        background-color: white;
+        position: absolute;
+        top: 430vh;
+        transform: rotate(-1deg);
+        z-index: 4444;
+    }
+    
+    .glitch{
+        width: 70%;
+        position: absolute;
+        top: 440vh;
+        left: 40%;
+    }
+
+    footer {
+        position: relative;
+        top: 4400px;
+        margin-bottom: 20px;
+        width: 85%;
+        margin: 0 auto;
+    }
+}
+
+/* IPAD PRO */
+@media (min-width:801px) and (max-width:1024px) {
+    body {
+        padding: 100px;
+    }
+
+    .identikit {
+        width: 80%;
+        height: auto;
+        display: none;
+    }
+
+    .identikitMobile {
+        left: 20%;
+        width: 70%;
+        height: auto;
+    }
+    
+    .logoPoster{
+        width: 35%;
+        z-index: 9999;
+        top: -80px;
+        transform: rotate(-1deg);
+    }
+
+
+    .locandina {
+        width: 35%;
+        position: absolute;
+        top: 790px;
+        left: -20px;
+        z-index: 444;
+        transform: rotate(-2deg);
+    }
+
+    .row1 {
+        position: absolute;
+        top: 200px;
+    }
+
+    .laVidaDespues {
+        width: 60%;
+        height: auto;
+        position: relative;
+        top: 0px;
+        left: 40%;
+    }
+
+    .A6gif {
+        width: 50%;
+        position: relative;
+        top: -390px;
+        left: 10%;
+        transform: rotate(-2deg);
+    }
+
+    .row2 {
+        position: absolute;
+        top: 900px;
+    }
+
+    .tappeti {
+        width: 130%;
+        height: auto;
+        justify-content: center;
+        transform: rotate(7deg);
+        position: relative;
+        left: -40%;
+        top: 0px;
+    }
+    
+       .ermione {
+        width: 45%;
+        height: auto;
+        position: relative;
+        top: -550px;
+        left: 50%
+    }
+
+     .row3 {
+        position: absolute;
+        top: 130vh;
+    }
+    
+    .folle{
+       position: absolute;
+        top: 150px;
+        
+    }
+
+    .optical {
+        width: 50%;
+        height: auto;
+        position: relative;
+        top:500px;
+        left: -30%;
+        z-index: 8888;
+    }
+
+    .manifesti{
+        width: 70%;
+        height: auto;
+        position: absolute;
+        top: -200px;
+        left: 35%;   
+    }
+    
+    .camminare {
+        width: 70%;
+        height: auto;
+        position: relative;
+        top: 170vh;
+        left: 30%;
+    }
+    
+        .row4{
+        position: absolute;
+        top: 240vh;
+    }
+    
+    .sanctum{
+        width: 40%;
+        left: 5%;
+    }
+    
+    .lineeSanctum{
+        width: 135%;
+        height: auto;
+        position: relative;
+        z-index: 0;
+        top: -600px;
+        left: -150px;
+        
+    }
+    
+    .Tcontact{
+        background-color: white;
+        position: absolute;
+        top: 290vh;
+        transform: rotate(-1deg);
+        z-index: 4444;
+    }
+    
+    .glitch{
+        width: 60%;
+        position: absolute;
+        top: 225vh;
+        left: 45%;
+    }
+ 
+
+    footer {
+        width: 85%;
+        margin: 0 auto;
+        position: absolute;
+        top: 4500px;
+    }
+}
+
+
+
+
+
+/* DESKTOP */
+@media (min-width:1025px) {
+    body {
+        padding: 100px;
+    }
+
+    .identikit {
+        width: 70%;
+        height: auto;
+        display: none;
+    }
+
+    .identikitMobile {
+        width: 70%;
+        height: auto;
+        position: absolute;
+        left: 250px;
+    }
+    
+    .logoPoster{
+        width: 35%;
+        z-index: 9999;
+        top: 240px;
+        transform: rotate(-1deg);
+    }
+
+
+    .locandina {
+        width: 30%;
+        position: absolute;
+        top: 1240px;
+        left: 0px;
+        z-index: 444;
+        transform: rotate(-1deg);
+    }
+
+    .row1 {
+        position: absolute;
+        top: 40vh;
+    }
+
+    .laVidaDespues {
+        width: 50%;
+        height: auto;
+        position: relative;
+        top: 0px;
+        left: 50%;
+    }
+
+    .A6gif {
+        width: 40%;
+        position: relative;
+        top: 10vh;
+        left: -20%;
+        transform: rotate(-2deg);
+    }
+
+    .row2 {
+        position: absolute;
+        top: 150vh;
+    }
+
+    .tappeti {
+        width: 110%;
+        height: auto;
+        justify-content: center;
+        transform: rotate(7deg);
+        position: relative;
+        left: -30%;
+        top: 0px;
+    }
+    
+    .ermione {
+        width: 50%;
+        height: auto;
+        position: relative;
+        top: -110vh;
+        left: 50%;
+    }
+
+    
+
+    .row3 {
+        position: absolute;
+        top: 340vh;
+    }
+    
+    .folle{
+       position: absolute;
+        left: 25%;
+        top: 130px;
+        
+    }
+
+    .optical {
+        width: 85%;
+        height: auto;
+        position: relative;
+        top: 400px;
+        left: 10%;
+        z-index: 8888;
+    }
+
+    .manifesti{
+        width: 110%;
+        height: auto;
+        position: absolute;
+        left: 90%;   
+    }
+    
+    .camminare {
+        width: 60%;
+        height: auto;
+        position: relative;
+        top: 480vh;
+    }
+    
+    
+    .row4{
+        position: absolute;
+        top: 560vh;
+    }
+    
+    .sanctum{
+        left: 15%;
+    }
+    
+    .lineeSanctum{
+        width: 120%;
+        height: auto;
+        position: relative;
+        z-index: 0;
+        top: -700px;
+        left: -150px;
+        
+    }
+    
+    .Tcontact{
+        background-color: white;
+        position: absolute;
+        top: 670vh;
+        left: 3%;
+        transform: rotate(-1deg);
+        z-index: 4444;
+    }
+    
+    .glitch{
+        width: 40%;
+        position: absolute;
+        top: 640vh;
+        left: 50%;
+    }
+    
+    
+/*    optical project */
+    .op01{
+        margin-top: -100px;
+    }
+    
+/*
+    .PasCover {
+        width: 40%;
+        height: auto;
+        position: relative;
+        top: -10vh;
+        left: 15%;
+    }
+*/
+
+
+    footer {
+        position: absolute;
+        top: 730vh;
+        width: 85%;
+        margin: 0 auto;
+    }
+}

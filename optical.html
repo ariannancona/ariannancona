@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Arianna Ancona</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Collegamento a Bootstrap e Fontawesome-->
+    <link rel="stylesheet" href="bootstrap-css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+
+    <!-- Collegamento a Google Font => Courier Prime -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <!--  Collegamento a CSS personalizzato -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/mediaquery.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/cursor01.png"/>
+
+
+
+    <style type="text/css">
+        body {
+            font-family: 'Courier Prime', monospace;
+            font-size: 18px;
+            font-weight: 400;
+            background: url(img/Background.png) center center repeat;
+            background-size: contain;
+        }
+
+
+
+        .LVD-card1 {
+            width: 100%;
+            height: 30vh;
+            background: url(img/01_LaVidaDespues/BDV.png) center center no-repeat;
+            background-size: cover;
+            border-radius: 50px;
+
+        }
+
+        .project-title {
+            background-color: white;
+            /*            height: 250px;*/
+            position: relative;
+            left: -0px;
+        }
+
+        .project-title h1 {
+            text-transform: uppercase;
+        }
+
+        .project-title hr {
+            border: 1px solid black;
+        }
+
+        .LVD-poster img {
+            width: 100%;
+            height: auto;
+        }
+
+        .A6 img {
+            width: 100%;
+            height: auto;
+        }
+
+
+        footer {
+            width: 100%;
+            position: relative;
+            bottom: 0px;
+            top: 20px;
+            z-index: 2000 !important;
+        }
+
+        footer a {
+            padding: 7px;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        footer a:hover {
+            color: rgba(255, 255, 255, 1);
+        }
+
+        footer span {
+            font-size: 16px;
+            margin: 0px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- MENU -->
+    <header>
+        <h2 class="home">
+            <a href="index.html"> <img src="img/Logo_BLU.svg"></a>
+        </h2>
+
+        <div class="menu">
+            <nav>
+                <input class='menu-toggler' id='menu-toggler' type='checkbox'>
+                <label for='menu-toggler'></label>
+                <ul>
+                    <li class='menu-item'>
+                        <a class="mail" href="mailto:ariannancona@icloud.com" target='_blank'><i class="fas fa-envelope"></i></a>
+                    </li>
+                    <li class='menu-item'>
+                        <a class="cell" href="tel:00393336524759" target='_blank'><i class="fas fa-phone-alt"></i></a>
+                    </li>
+                    <li class='menu-item'>
+                        <a class="behance" href="https://www.behance.net/ariannaancona" target='_blank'><i class="fab fa-behance"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <main class="container-fluid mt-5">
+        <div class="row mt-5 d-flex justify-content-center align-items-center LVD-poster">
+            
+            <div class="col-md-6 project-title p-5 shadow drag-me mt-5">
+                <h1>Optical Art</h1>
+                <hr>
+                <h4 class="pt-2">Quattro serie di tavole 28cm x 28cm ispirate all'arte di Marina Apollonio e Jean-Pierre Yvaral</h4>
+            </div>
+            <div class="col-12 col-md-4">
+                <img src="img/05_Optical/Optical-04.png" class="shadow drag-me">
+            </div>
+        </div>
+
+<!--
+        <div class="row LVD-poster op01 d-flex justify-content-end">
+            <div class="col-12 col-md-3 d-flex align-items-end mt-5" >
+                <img src="img/05_Optical/Optical-02-min.png" class="shadow drag-me">
+            </div>
+            <div class="col-12 col-md-4 mt-5 d-flex align-items-end">
+                <img src="img/05_Optical/Optical-03-min.png" class="shadow drag-me">
+            </div>
+        </div>
+-->
+        
+        <div class="row LVD-poster d-flex align-items-center justify-content-start my-5">
+            <div class="col-12 col-md-6 mt-5">
+                <img src="img/05_Optical/Optical-01.png" class="shadow drag-me">
+            </div>
+            <div class=" col-12 offset-md-1 col-md-4 mt-5">
+                <img src="img/05_Optical/Optical-03-min.png" class="shadow drag-me">
+            </div>
+           
+        </div>
+        
+         <div class="row LVD-poster mt-5">
+            <div class=" col-12 offset-md-1 col-md-5 mt-5 pr-4 d-flex align-items-end">
+                <img src="img/05_Optical/Optical-07.png" class="shadow drag-me">
+            </div>
+            <div class=" col-12 col-md-6 mt-5 pl-4">
+                <img src="img/05_Optical/Optical-05.png" class="shadow drag-me">
+            </div>
+        </div>
+          <div class="row LVD-poster mb-5">
+            <div class="col-12 col-md-6 mt-5 pr-4">
+                <img src="img/05_Optical/Optical-08.png" class="shadow drag-me">
+            </div>
+            <div class="col-12 col-md-5 mt-5 pl-4 ">
+                <img src="img/05_Optical/Optical-13.png" class="shadow drag-me">
+            </div>
+        </div>
+       
+        
+        <div class="row LVD-poster d-flex align-items-center justify-content-end my-5">
+            <div class=" col-12  col-md-4 mt-5">
+                <img src="img/05_Optical/Optical-15.png" class="shadow drag-me">
+            </div>
+            <div class="col-12 col-md-6 offset-md-1 mt-5">
+                <img src="img/05_Optical/Optical-06.png" class="shadow drag-me">
+            </div>
+        </div>
+        <div class="row LVD-poster">
+            <div class="col-12 col-md-6 mt-5 pr-4">
+                <img src="img/05_Optical/Optical-09.png" class="shadow drag-me">
+            </div>
+            <div class="col-12 col-md-5 mt-5 pl-4 align-self-end">
+                <img src="img/05_Optical/Optical-10.png" class="shadow drag-me">
+            </div>
+        </div>
+        <div class="row LVD-poster">
+
+            <div class=" col-12 offset-md-1 col-md-5 mt-5 pr-4">
+                <img src="img/05_Optical/Optical-11.png" class="shadow drag-me">
+            </div>
+            <div class=" col-12 col-md-6 mt-5 pl-4">
+                <img src="img/05_Optical/Optical-12.png" class="shadow drag-me">
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer class="row shadow mt-5 d-flex align-items-center">
+        <div class="col-12 col-md-5 d-flex align-items-center justify-content-center  justify-content-md-start mb-4 mb-md-0">
+            <span class="text-sm-center text-md-left">All works Arianna Ancona</span>
+        </div>
+        <div class="col-12 col-md-7 text-center text-md-right">
+            <a class="mail" href="mailto:ariannancona@icloud.com" target='_blank'><i class="fas fa-envelope fa-2x"></i></a>
+            <a class="cell" href="tel:00393336524759" target='_blank'><i class="fas fa-phone-alt fa-2x"></i></a>
+            <a class="behance" href="https://www.behance.net/ariannaancona" target='_blank'><i class="fab fa-behance fa-2x"></i></a>
+            <a class="linkedin" href="https://www.linkedin.com/in/arianna-ancona-b0497a1a7/" target='_blank'><i class="fab fa-linkedin-in fa-2x"></i></a>
+        </div>
+    </footer>
+
+
+
+
+</body>
+
+<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+    $(function() {
+        $(".drag-me").draggable();
+    });
+
+</script>
+
+</html>

@@ -1,0 +1,102 @@
+html, body{
+    cursor: url("/cursor01.png"), auto;
+}
+
+
+
+main {
+    position: relative;
+}
+
+.home img{
+    width: 40%;
+}
+
+.home a:hover img{
+   filter: invert(31%) sepia(98%) saturate(7082%) hue-rotate(356deg) brightness(94%) contrast(117%);
+    transform: scale(120%);
+}
+
+logoPoster{
+   filter: invert(8%) sepia(100%) saturate(7141%) hue-rotate(247deg) brightness(101%) contrast(141%);
+    fill: red;
+}
+
+.Tcontact a i{
+   color: #001AFF; 
+}
+
+.Tcontact a i:hover{
+   color: red; 
+    opacity:1;
+    transform: rotate(-5deg) scale(120%);
+}
+
+a:hover {
+    text-decoration: none;
+    transform: rotate(-3deg);
+    cursor: url("/cursor02.png"), auto;
+}
+
+a:hover img{
+    transform: rotate(-4deg);
+    filter: grayscale(50%) blur(3px);
+    filter: grayscale(100%) contrast(200%);
+}
+
+.shadow {
+    filter: drop-shadow(1px 1px 20px rgba(0, 0, 0, 0.01));
+}
+
+.drag-me {
+    z-index: 100;
+}
+
+.folle{
+        color: white;
+        background-color: #ea542c;
+        padding: 15px 30px;
+        font-family: Courier Prime;
+        font-size: 40px;
+        font-style: italic;
+    }
+
+.folle:hover{
+        color: white;
+        background-color: darkgrey;
+        padding: 15px 30px;
+        font-family: Courier Prime;
+        font-size: 40px;
+        font-style: italic;
+        transform: rotate(-4deg);
+        filter: grayscale(100%) contrast(200%);
+    }
+
+
+footer {
+    background-color: #001AFF;
+    padding: 20px;
+    margin: 0px;
+    color: white;
+}
+
+footer a:hover i{
+    color: white; 
+    opacity:1;
+    transform: rotate(-5deg) scale(120%);
+}
+
+
+        footer a {
+            padding: 12px;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        footer a:hover {
+            color: rgba(255, 255, 255, 1);
+        }
+
+        footer span {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }

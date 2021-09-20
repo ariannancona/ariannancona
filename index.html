@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Arianna Ancona</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Collegamento a Bootstrap e Fontawesome-->
+    <link rel="stylesheet" href="bootstrap-css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+
+    <!-- Collegamento a Google Font => Courier Prime -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <!--  Collegamento a CSS personalizzato -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/mediaquery.css">
+    
+    
+     <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/cursor01.png"/>
+
+
+
+
+    <style type="text/css">
+        html {
+            cursor: url("cursor01.svg"), default;
+        }
+
+
+        body {
+            font-family: 'Courier Prime', monospace;
+            font-size: 18px;
+            font-weight: 400;
+            background: url(img/Background.png) center center repeat;
+            background-size: contain;
+            width: 95%;
+            margin: 0 auto;
+        }
+
+        header {
+            width: 85%;
+            margin: 0 auto;
+            position: fixed;
+            padding-top: 0px;
+            z-index: 3000 !important;
+            display: flex;
+        }
+
+        .home {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            padding: 0px;
+
+        }
+
+        .menu {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            padding: 0px;
+            justify-content: flex-end;
+        }
+
+        .menu nav {
+            position: relative;
+        }
+
+        .main {
+            width: 90%;
+            margin: 0 auto;
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- MENU -->
+    <header>
+        <h2 class="home">
+            <a href="index.html">
+                <img src="img/Logo_BLU.svg">
+            </a>
+        </h2>
+
+        <div class="menu">
+            <nav>
+                <input class='menu-toggler' id='menu-toggler' type='checkbox'>
+                <label for='menu-toggler'></label>
+                <ul>
+                    <li class='menu-item'>
+                        <a class="mail" href="mailto:ariannancona@icloud.com" target='_blank'><i class="fas fa-envelope"></i></a>
+                    </li>
+                    <li class='menu-item'>
+                        <a class="cell" href="tel:00393336524759" target='_blank'><i class="fas fa-phone-alt"></i></a>
+                    </li>
+                    <li class='menu-item'>
+                        <a class="behance" href="https://www.behance.net/ariannaancona" target='_blank'><i class="fab fa-behance"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- IDENTIKIT -->
+        <a href="about.html">
+        <img src="img/00_Identikit-Mobile2.jpg" alt="identikit" class="identikitMobile drag-me shadow">
+        </a>
+
+        <!-- LOGO -->
+        <a href="logo.html"><img src="img/Logo.svg" class="logoPoster logo drag-me"></a>
+
+
+        <!-- SCONTRINO -->
+        <a href="https://www.behance.net/gallery/122953249/Grazie-Arrivederci-Title-Sequence" target="_blank"><img src="img/LOCANDINA.png" alt="Grazie e Arrivederci" class="locandina drag-me"></a>
+
+        <!-- LA VIDA DESPUÉS -->
+        <div class="row1">
+            <a href="la-vida-despues.html"><img src="img/01_LaVidaDespues/La_Vida_Despues_1.png" width="100%" class="laVidaDespues drag-me shadow"></a>
+            <a href="la-vida-despues.html"><img src="img/01_LaVidaDespues/LVD-A6.gif" class="A6gif drag-me"></a>
+        </div>
+
+        <div class="row2">
+            <!-- TAPPETI -->
+            <a href="tappeti.html"><img src="img/04_Tappeti/Tappeto_giallo.png" alt="tappeto" class="tappeti drag-me"></a>
+            <!-- ERMIONE -->
+            <a href="ermione.html"><img src="img/02_Ermione/Ermione.gif" class="ermione drag-me"></a>
+
+        </div>
+
+        <div class="row3">
+            <a href="folle.html" class="folle drag-me shadow">Folle</a>
+
+            <!-- OPTICAL -->
+            <a href="optical.html"><img src="img/05_Optical/Optical-01.png" alt="People are strange cover" class="optical drag-me shadow"></a>
+
+            <!-- MANIFESTI -->
+            <a href="manifesti.html"><img src="img/06_Manifesti/06_Street%20Art3.jpg" alt="Tate Series " class="shadow drag-me manifesti"></a>
+        </div>
+
+
+        <!-- CAMMINARE -->
+        <a href="camminare.html"><img src="img/03_Camminare/Camminare.gif" alt="Fanzine" class="camminare drag-me"></a>
+
+        <!-- SANCTUM -->
+        <div class="row4">
+            <a href="Sanctum_Codice/index.html" target="_blank"><img src="img/07_Sanctum/07_Sancum-App.png" class="sanctum drag-me"></a>
+            <img src="img/07_Sanctum/Sanctum_Lines-14-14.png" class="lineeSanctum">
+        </div>
+
+
+
+        <div class=" offset-md-1  col-md-5 Tcontact p-5 shadow drag-me">
+            <h1>In bacheca!</h1>
+            <hr>
+            <h4 class="pt-2">Lavoriamo insieme? Scrivimi e finisci anche tu nella mia bacheca</h4>
+            <div class="text-right">
+                <a class="mail pr-3" href="mailto:ariannancona@icloud.com" target='_blank'><i class="fas fa-envelope fa-2x"></i></a>
+                <a class="cell pr-3" href="tel:00393336524759" target='_blank'><i class="fas fa-phone-alt fa-2x"></i></a>
+            </div>
+        </div>
+        <img src="img/Glitch.gif" alt="glitch" class="glitch drag-me shadow">
+
+        <!-- PEOPLE ARE STRANGE -->
+        <!--            <img src="img/PeopleAreStrange.png" alt="People are strange cover" class="PasCover drag-me shadow">-->
+
+    </main>
+    <footer class="row shadow mt-5 d-flex align-items-center">
+        <div class="col-12 col-md-5 d-flex align-items-center justify-content-center justify-content-md-start">
+            <span class="text-sm-center text-md-left">All works Arianna Ancona <br> Designed by Arianna Ancona</span>
+        </div>
+        <div class="col-12 col-md-7 text-center text-md-right">
+            <a class="mail" href="mailto:ariannancona@icloud.com" target='_blank'>
+            <i class="fas fa-envelope fa-2x "></i>
+            </a>
+            <a class="cell" href="tel:00393336524759" target='_blank'>
+            <i class="fas fa-phone-alt fa-2x "></i>
+            </a>
+            <a class="behance" href="https://www.behance.net/ariannaancona" target='_blank'>
+            <i class="fab fa-behance fa-2x "></i>
+            </a>
+            <a class="linkedin" href="https://www.linkedin.com/in/arianna-ancona-b0497a1a7/" target='_blank'>
+            <i class="fab fa-linkedin-in fa-2x "></i>
+            </a>
+        </div>
+    </footer>
+
+
+
+
+</body>
+
+<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+
+<script type="text/javascript">
+    $(function() {
+        $(".drag-me").draggable();
+    });
+</script></html>
