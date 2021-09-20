@@ -1,0 +1,870 @@
+<!doctype html>
+<html lang="it">
+    <head>
+    <meta charset="UTF-8">
+    <title>Sanctum</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Collegamento a Bootstrap e Fontawesome-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/Sanctum_favicon.ico">
+
+    <style type="text/css">
+        /* GENERAL CSS */
+        body {
+            font-family: Area, sans-serif;
+            background-color: #fbfbfb;
+            zoom: 80%;
+        }
+        
+        audio{
+            z-index: 1000;
+            position: fixed;
+            bottom: 40px;
+            left: 40px;
+        }
+
+        h1 {
+            font-size: 56px;
+            font-weight: 600;
+            color: #000C52;
+        }
+
+        h2 {
+            font-size: 40px;
+            font-weight: 600;
+            color: #000C52;
+        }
+
+        h3 {
+            font-size: 30px;
+            font-weight: normal;
+            color: #000C52;
+        }
+
+        h4 {
+            font-size: 24px;
+            font-weight: normal;
+            color: #000C52;
+            line-height: 1.5
+        }
+
+        h5 {
+            font-size: 20px;
+            font-weight: normal;
+            color: #000C52;
+        }
+
+        .p-body1 {
+            font-size: 16px;
+            font-weight: normal;
+            color: #000C52;
+        }
+
+        .p-body2 {
+            font-size: 12px;
+            font-weight: normal;
+            color: #000C52;
+        }
+
+        .gradient-light {
+            background-color: #F4F4F4;
+            background-image: linear-gradient(160deg, rgba(214, 220, 255, 0.3), rgba(185, 195, 255, 0.7));
+        }
+
+        .block-height {
+            height: 900px;
+        }
+
+        .block-height-vh {
+            height: 100vh;
+        }
+
+        .sanctum-app img {
+            width: 360px;
+            height: auto;
+            /*margin: 104px 0px;*/
+        }
+
+        .h1-margin-1 {
+            padding-top: 184px;
+            padding-bottom: 52px;
+        }
+
+        .h2-margin-1 {
+            padding-top: 104px;
+        }
+
+        .h2-margin-2 {
+            padding-top: 160px;
+            padding-bottom: 96px;
+        }
+
+        .h3-margin-1 {
+            padding-top: 52px;
+            padding-bottom: 24px;
+        }
+
+        .btn-sanctum {
+            font-family: Area, sans-serif;
+            font-size: 24px;
+            color: #1A2FA9;
+            padding: 20px 30px;
+            background-color: #f4f4f4;
+            border-radius: 1.5rem;
+            border: none;
+            box-shadow: 4px 4px 7px rgba(129, 148, 255, 0.2), -2px -2px 6px rgba(255, 255, 255, 0.2);
+            margin-top: 40px;
+            margin-right: 30px;
+            transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        }
+
+        .btn-sanctum:hover {
+            background-color: #B9C3FF;
+            box-shadow: 4px 4px 7px rgba(129, 148, 255, 0.8), -2px -2px 6px rgba(255, 255, 255, 0.2);
+        }
+
+        .btn-sanctum-green {
+            background-color: #D7DCBA;
+            color: #000C52;
+            margin-right: 0px;
+        }
+
+        .btn-sanctum-green:hover {
+            background-color: #BEC59C;
+            color: #fff;
+            box-shadow: 4px 4px 7px rgba(183, 182, 140, 0.8), -2px -2px 6px rgba(255, 255, 255, 0.2);
+        }
+        
+        
+        
+
+
+        /* HEADER CSS */
+        header {
+            background-color: rgba(255, 255, 255, 0.8);
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 100;
+            height: 130px;
+        }
+
+        header h1 {
+            margin: 34px 40px;
+        }
+
+        nav p {
+            color: #B9C3FF;
+            font-weight: bold;
+            font-size: 16px;
+            margin-right: 40px;
+            margin-bottom: 0;
+        }
+
+        nav p a {
+            font-size: 24px;
+            padding: 10px;
+            color: #B9C3FF;
+        }
+
+        nav p a:hover {
+            color: #7489FF;
+        }
+
+
+        /* HERO 01 CSS*/
+        aside {
+            background: url(img/Linee.gif) no-repeat center center;
+            background-size: cover;
+            height: 100vh;
+        }
+
+        .hero01 {
+            background: url(img/Sanctum_Logo_Black.png) no-repeat center center;
+            background-size: contain;
+            height: 70vh;
+            margin-top: 160px;
+
+        }
+
+        /* HERO 02 CSS */
+        .hero02 {
+            position: relative;
+        }
+
+        .lines {
+            width: 2000px;
+            height: auto;
+        }
+
+        .hero02 .lines {
+            position: absolute;
+            right: 0px;
+            bottom: -300px;
+        }
+
+
+        /* SECTIONS CSS */
+        .sanctum-section {
+            margin-bottom: 104px;
+        }
+
+        .section-card {
+            height: 240px;
+            margin-top: 30px;
+        }
+
+        .section-card-1 {
+            background: url(img/Sanctum_Section_Flower-1.gif) no-repeat center center;
+            background-size: 240px;
+        }
+
+        .section-card-2 {
+            background: url(img/Sanctum_Section_Flower-3.gif) no-repeat center center;
+            background-size: 240px;
+        }
+
+        .section-card-3 {
+            background: url(img/Sanctum_Section_Flower-4.gif) no-repeat center center;
+            background-size: 240px;
+        }
+
+        .section-card-4 {
+            background: url(img/Sanctum_Section_Flower-2.gif) no-repeat center center;
+            background-size: 240px;
+        }
+
+
+        /* MOOD AND PLAY CSS */
+        .mood-and-play {
+            background: url(img/MB_background-16-16.png) no-repeat center center;
+            background-size: cover;
+            height: 100%;
+            padding: 140px 0px;
+        }
+
+        .leaves-2 {
+            height: 124px;
+            background: url(img/Sanctum_Leaves_2-15.png) no-repeat center center;
+            background-size: contain;
+        }
+
+        /* TESTIMONIALS CSS */
+        .testimonials {
+            width: 550px;
+            height: 600px;
+            background-color: #D6DCFF;
+            border-radius: 10%;
+            box-shadow: 0px 4px 9px rgba(129, 148, 255, 0.2);
+            margin-top: -420px;
+            margin-bottom: 104px;
+            position: relative;
+            padding: 56px;
+        }
+
+        .testimonals-virg {
+            width: 104px;
+            height: 80px;
+            background: url(img/Sanctum-testimonials-13.png) no-repeat center center;
+            background-size: contain;
+            opacity: 0.1;
+            position: absolute;
+            top: 104px;
+        }
+
+        .testimonials h4 {
+            padding-top: 172px;
+        }
+
+        .testimonials-name {
+            font-weight: bold;
+            margin-bottom: 0px;
+        }
+
+        .testimonials-sign {
+            font-size: 16px;
+            margin-bottom: 0px;
+            position: absolute;
+            bottom: 32px;
+        }
+
+        .testimonials-2-left {
+            transform: scale(0.9, 0.9) rotate(-2.5deg);
+
+        }
+
+        .testimonials-2-right {
+            transform: scale(0.9, 0.9) rotate(2.5deg);
+        }
+
+        .testimonials-back {
+            background-color: #B9C3FF;
+            margin: 0px 0px;
+            width: 350px;
+            height: 400px;
+        }
+
+        .testimonials-back-1 {
+            transform: rotate(-5deg);
+        }
+
+        .testimonials-back-2 {
+            transform: rotate(-2.5deg);
+            margin-top: -40px;
+        }
+
+        .testimonials-back-5 {
+            margin-top: -40px;
+        }
+
+        .testimonials-back-3 {
+            transform: rotate(2.5deg);
+            margin-top: -40px;
+        }
+
+        .testimonials-back-4 {
+            transform: rotate(5deg);
+        }
+
+        .row-card-back {
+            position: relative;
+            top: 150px;
+        }
+
+
+        /* MENTAL ISSUES CSS */
+
+
+
+        /* SANCTUM PLUS CSS */
+        .sanctum-plus-row1 {
+            height: 240px;
+            margin-bottom: 32px;
+
+        }
+
+        .sanctum-plus-leaves {
+            background: url(img/Sanctum_leaves-12.png) no-repeat center center;
+            background-size: contain;
+        }
+
+        .sanctum-plus-flowers {
+            height: 240px;
+            background: url(img/Sanctum_Flowers_pattern.gif) repeat center center;
+            background-size: contain;
+        }
+
+        .plus-annual {
+            height: 130px;
+            background-color: #B9C3FF;
+            padding: 48px;
+            margin: 0px 24px 48px 24px;
+            box-shadow: 2px 2px 7px rgba(129, 148, 255, 0.1), -2px -2px 6px rgba(255, 255, 255, 0.2);
+            position: relative;
+        }
+
+        .plus-annual p {
+            font-size: 18px;
+            color: #000C52;
+            margin-bottom: 0px;
+        }
+
+        .btn-sanctum-plus-1 {
+            font-size: 16px;
+            font-weight: bold;
+            padding: 10px 20px;
+            margin-right: 40px;
+            position: absolute;
+            bottom: 108px;
+            right: -60px;
+        }
+
+        .plus-monthly {
+            height: 130px;
+            padding: 48px;
+            margin: 0px 24px 48px 24px;
+            box-shadow: 2px 2px 7px rgba(129, 148, 255, 0.1), -2px -2px 6px rgba(255, 255, 255, 0.2);
+        }
+
+        .plus-monthly:hover {
+            background-color: #f4f4f4;
+            box-shadow: 2px 2px 7px rgba(129, 148, 255, 0.6), -2px -2px 6px rgba(255, 255, 255, 0.2);
+        }
+
+        .plus-monthly p {
+            font-size: 18px;
+            color: #000C52;
+            margin-bottom: 0px;
+        }
+
+        .plus-terms-1 {
+            opacity: 0.7;
+        }
+
+        .plus-terms-2 {
+            margin: 0px 24px 0px 24px;
+        }
+
+        .plus-terms-2 p {
+            font-weight: bold;
+        }
+
+        .btn-sanctum-plus-2 {
+            margin: 24px 0px;
+            font-size: 24px;
+        }
+
+
+
+        /* FOOTER CSS */
+        footer {
+            background-color: #8194FF;
+            color: #f4f4f4;
+            padding: 72px 0px 36px 0px;
+        }
+
+        footer h5 {
+            color: #f4f4f4;
+            line-height: 1.3;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        footer p {
+            line-height: 1;
+        }
+
+        footer a {
+            color: #f4f4f4;
+        }
+
+        footer a:hover {
+            color: #000C52;
+            text-decoration: none;
+        }
+
+        a .badge-store {
+            height: 72px;
+            width: auto;
+            margin-bottom: 24px;
+        }
+        
+        
+        
+        
+    </style>
+</head>
+
+<body>
+    
+    
+    <audio controls autoPlay preload="auto" loop>
+        <source src="sound/Sanctum-sound.ogg" type="audio/ogg" autoplay>
+        <source src="sound/Sanctum-sound.mp3" type="audio/mpeg" autoplay>
+        <source src="sound/Sanctum-sound.wav" type="audio/wav" autoplay>
+    </audio>
+
+    <!-- HEADER -->
+    <header class="container-fluid">
+        <div class="row">
+            <div class="col-4">
+                <h1>
+                    <a href="index.html"><img src="img/Sanctum_Logo_Black_Circle.png" width="65" height="62" alt="Logo Sanctum"></a>
+                </h1>
+            </div>
+            <nav class="col-8 d-flex justify-content-end align-items-center">
+                <p class="nav-item">Get Sanctum on
+                    <a href="https://www.apple.com/it/ios/app-store/" target="_blank"><i class="fab fa-apple"></i></a>
+                    <a href="https://play.google.com/store/apps?gl=IT" target="_blank"><i class="fab fa-google-play"></i></a>
+                </p>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- HERO 01 -->
+    <aside class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-sm-10 hero01"></div>
+        </div>
+    </aside>
+
+
+    <!-- HERO 02 -->
+    <div class="container-fluid hero02 gradient-light">
+        <div class="row justify-content-sm-center">
+            <div class="col-sm-10 text-sm-center col-md-7 text-md-left offset-md-1">
+                <h1 class="my-5 pt-5">Your body is a sanctuary</h1>
+                <h4 class="mt-lg-5">Less stressed. More resilient. Happier.</h4>
+                <h4>It all starts with just few minutes a day.</h4>
+            </div>
+            <img class="lines my-5 py-5" src="img/Sanctum_Lines-14-14.png" width="5452" height="1982">
+            <div class="col-sm-12 justify-content-sm-center col-md-4 justify-content-md-start sanctum-app d-flex align-items-center my-5 py-5">
+                <img src="img/App_1.2.png" width="796" height="1558" alt="Sanctum app home">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- SECTION -->
+    <div class="container-fluid sanctum-section">
+        <div class="row h2-margin-1 justify-content-center">
+            <h2 class="col-10 text-center">Wherever you want and wherever you are</h2>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <div class="col-10">
+                <div class="row justify-content-center">
+                    <div class="col-xl-3 col-lg-5 col-sm-12 section-card section-card-1 d-flex justify-content-center align-items-center">
+                        <h4>meditation</h4>
+                    </div>
+                    <div class="col-xl-3 col-lg-5 col-sm-12 section-card section-card-2 d-flex justify-content-center align-items-center">
+                        <h4>sleep</h4>
+                    </div>
+                    <div class="col-xl-3 col-lg-5 col-sm-12 section-card section-card-3 d-flex justify-content-center align-items-center">
+                        <h4>mindfulness</h4>
+                    </div>
+                    <div class="col-xl-3 col-lg-5 col-sm-12 section-card section-card-4 d-flex justify-content-center align-items-center">
+                        <h4>stress</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- MOOD AND PLAY -->
+    <div class="container-fluid mood-and-play gradient-light">
+        <div class="row justify-content-sm-center">
+            <h2 class="col-sm-10 text-center my-5">For any mind, any mood, any goal</h2>
+            <h3 class="d-sm-block d-md-none col-sm-12 text-sm-center">Choose your mood every day <br> and track your progress.</h3>
+            <div class="col-sm-12 text-sm-center col-md-4 text-md-right sanctum-app justify-content-end my-5">
+                <img src="img/App_2.png" width="796" height="1558" alt="Sanctum app home">
+            </div>
+            <div class="d-sm-none d-md-block col-md-7 text-md-left offset-md-1 my-md-5">
+                <h3>Choose your mood every day <br> and track your progress.</h3>
+                <div class="row d-none d-md-flex mt-5">
+                    <div class="col-md-5">
+                        <button class="btn-sanctum">Completed couses</button>
+                    </div>
+                    <div class="col-md-5">
+                        <button class="btn-sanctum">Number of sessions</button>
+                    </div>
+                    <div class="col-md-5">
+                        <button class="btn-sanctum">Sleep control</button>
+                    </div>
+                    <div class="col-md-5">
+                        <button class="btn-sanctum">Mood graph</button>
+                    </div>
+                    <div class="col-md-5">
+                        <button class="btn-sanctum">Daily reminder</button>
+                    </div>
+                    <div class="col-md-5">
+                        <button class="btn-sanctum">Personal notes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row leaves-2 my-5"></div>
+        <div class="row justify-content-sm-center">
+            <h2 class="col-sm-10 text-center my-5">Only few minutes a day to become a happier you</h2>
+            <div class="col-sm-12 text-sm-center col-md-6 text-md-left offset-md-2 my-md-5">
+                <h3>Choose the lesson you need <br> and just breathe</h3>
+                <div class="row d-sm-none d-md-flex mt-5">
+                    <div class="col-md-5">
+                        <button class="btn-sanctum">Meditation</button>
+                    </div>
+                    <div class="col-md-5">
+                        <button class="btn-sanctum">Study</button>
+                    </div>
+                    <div class="col-md-5">
+                        <button class="btn-sanctum">Stress</button>
+                    </div>
+                    <div class="col-md-5">
+                        <button class="btn-sanctum">Work</button>
+                    </div>
+                    <div class="col-md-5">
+                        <button class="btn-sanctum">Yoga</button>
+                    </div>
+                    <div class="col-md-5">
+                        <button class="btn-sanctum">Mindfulness</button>
+                    </div>
+                    <div class="col-md-5">
+                        <button class="btn-sanctum">Sleep</button>
+                    </div>
+                    <div class="col-md-5">
+                        <button class="btn-sanctum">Group</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 text-sm-center col-md-4 text-md-left sanctum-app justify-content-start my-5">
+                <img src="img/App_3.png" width="796" height="1558" alt="Sanctum app home">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- TESTIMONIALS -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1 class="h2-margin-1 mb-5">You are your home</h1>
+            </div>
+        </div>
+
+        <!-- background card con bootstrap (col-3) -->
+        <div class="row row-card-back">
+            <div class="d-flex col-sm-6 col-lg-4 col-xl-3 justify-content-start">
+                <div class="testimonials testimonials-back testimonials-back-1">
+                    <div class="testimonals-virg"></div>
+                </div>
+            </div>
+            <div class="d-none d-xl-flex col-xl-3 justify-content-start">
+                <div class="testimonials testimonials-back testimonials-back-2">
+                    <div class="testimonals-virg"></div>
+                </div>
+            </div>
+            <div class="d-sm-none d-lg-flex col-lg-4 d-xl-none">
+                <div class="testimonials testimonials-back testimonials-back-5">
+                    <div class="testimonals-virg"></div>
+                </div>
+            </div>
+            <div class="d-none d-xl-flex col-xl-3 justify-content-end">
+                <div class="testimonials testimonials-back testimonials-back-3">
+                    <div class="testimonals-virg"></div>
+                </div>
+            </div>
+            <div class="d-flex col-sm-6 col-lg-4 col-xl-3 justify-content-end">
+                <div class="testimonials testimonials-back testimonials-back-4">
+                    <div class="testimonals-virg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- PROVA CARD 2 CON BOOTSTRAP -->
+    <div class="row justfy-content-center my-5">
+        <!-- 3 card con  xl -->
+        <div class="d-none d-xl-flex col-xl-4 justify-content-center">
+            <div class="testimonials testimonials-2-left">
+                <div class="testimonals-virg"></div>
+                <h4 class="text-center">Your app brings so much peace <br> and tolerance to our home.</h4>
+                <div class="testimonials-sign p-body2">
+                    <p class="testimonials-name">Ashley, Boston</p>
+                    <p>on meditation’s positive effect on family life</p>
+                </div>
+            </div>
+        </div>
+        <!-- 2 card con lg -->
+        <div class="d-none d-lg-flex col-lg-6 d-xl-none justify-content-center">
+            <div class="testimonials testimonials-2-left">
+                <div class="testimonals-virg"></div>
+                <h4 class="text-center">Your app brings so much peace <br> and tolerance to our home.</h4>
+                <div class="testimonials-sign p-body2">
+                    <p class="testimonials-name">Ashley, Boston</p>
+                    <p>on meditation’s positive effect on family life</p>
+                </div>
+            </div>
+        </div>
+        <!-- card centrale con sm e xl -->
+        <div class="d-sm-flex col-sm-12 d-lg-none d-xl-flex col-xl-4 justify-content-center">
+            <div class="testimonials">
+                <div class="testimonals-virg"></div>
+                <h4 class="text-center">Sanctum has allowed me
+                    to simply be present with
+                    my patients, and not stuck
+                    in my emotions.</h4>
+                <div class="testimonials-sign p-body2">
+                    <p class="testimonials-name">Tracy, Germany</p>
+                    <p>on the benefits of his employees embracing meditation</p>
+                </div>
+            </div>
+        </div>
+        <!-- 2 card con lg -->
+        <div class="d-none d-lg-flex col-lg-6 d-xl-none justify-content-center">
+            <div class="testimonials testimonials-2-right">
+                <div class="testimonals-virg"></div>
+                <h4 class="text-center">Sanctum has allowed me
+                    to simply be present with
+                    my patients, and not stuck
+                    in my emotions.</h4>
+                <div class="testimonials-sign p-body2">
+                    <p class="testimonials-name">Tracy, Germany</p>
+                    <p>on the benefits of his employees embracing meditation</p>
+                </div>
+            </div>
+        </div>
+        <!-- 3 card con xl -->
+        <div class="d-none d-xl-flex col-xl-4 justify-content-center">
+            <div class="testimonials testimonials-2-right">
+                <div class="testimonals-virg"></div>
+                <h4 class="text-center">Lola’s guidance helped me <br> to understand the functioning <br> of the mind.</h4>
+                <div class="testimonials-sign p-body2">
+                    <p class="testimonials-name">John, Belgium</p>
+                    <p>on learnig to smile again</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- MENTAL ISSUES -->
+    <div class="container-fluid gradient-light">
+        <div class="row">
+            <!-- App visibile >- md-->
+            <div class="d-sm-none d-md-block col-md-4 text-md-right sanctum-app text-right my-5">
+                <img src="img/App_4.png" width="796" height="1558" alt="Sanctum app home">
+            </div>
+            <div class="col-sm-10 text-sm-center col-md-7 text-md-left offset-1">
+                <h1 class="my-5 pt-5">Sanctum is always with you</h1>
+                <div class="row">
+                    <div class="col-md-10 col-lg-10 col-xl-8 mt-lg-5">
+                        <h4>Looking for more help besides meditation? <br>
+                            Sanctum provides extra support thanks to these trusted mental health resources from around the world.
+                            <br><br>
+                            If you feel you need it, contact our professionals
+                            who will show you the right path for you.
+                        </h4>
+                    </div>
+                </div>
+                <button class="btn-sanctum btn-sanctum-green">Ask for help</button>
+            </div>
+            <div class="d-sm-block d-md-none col-sm-12 text-sm-center sanctum-app text-right my-5">
+                <img src="img/App_4.png" width="796" height="1558" alt="Sanctum app home">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- SANCTUM PLUS -->
+    <div class="container-fluid">
+        <div class="row h2-margin-1 justify-content-center">
+            <h1 class="col-10 text-center">Try Sanctum Plus for free</h1>
+        </div>
+        <div class="row sanctum-plus-leaves d-flex justify-content-center">
+            <div class="col-md-10">
+                <div class="row sanctum-plus-row1">
+                    <h4 class="col-sm-6 col-md-6 col-lg-3 d-flex justify-content-center align-items-center text-center">Unlock the full <br> experience offline</h4>
+                    <h4 class="col-sm-6 col-md-6 col-lg-3 d-flex justify-content-center align-items-center text-center">New exercises and <br> sound everyday</h4>
+                    <h4 class="col-sm-6 col-md-6 col-lg-3 d-flex justify-content-center align-items-center text-center">Yoga lessons for mind <br> and body fitness</h4>
+                    <h4 class="col-sm-6 col-md-6 col-lg-3 d-flex justify-content-center align-items-center text-center">Have your personal <br> coach follow you</h4>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-sm-11 col-md-6 col-lg-4 btn-sanctum plus-annual d-flex align-items-center">
+                <div>
+                    <h4>Annual - first 14 days free</h4>
+                    <p>€4.83/month, billed annually at €57.99</p>
+                    <button class="btn-sanctum btn-sanctum-green btn-sanctum-plus-1">Best value</button>
+                </div>
+            </div>
+            <div class="col-sm-11 col-md-6 col-lg-4 btn-sanctum plus-monthly d-flex align-items-center">
+                <div>
+                    <h4>Monthly - first 7 days free</h4>
+                    <p>€12.99/month</p>
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <p class="col-sm-10 p-body1 text-center plus-terms-1">After your free trial, the annual subscription is €57.99 and automatically renewss each year.</p>
+        </div>
+        <div class="row justify-content-center plus-terms-2">
+            <div class="col-sm-6 text-right">
+                <p class="p-body1">Terms & conditions</p>
+            </div>
+            <div class="col-sm-6">
+                <p class="p-body1">Cancel anytime</p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <button class="btn-sanctum btn-sanctum-green btn-sanctum-plus-2">Try it now</button>
+        </div>
+        <div class="row">
+            <div class="col-12 sanctum-plus-flowers"></div>
+        </div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="row mb-5">
+                    <a href="index.html" class="col-sm-12 text-sm-center col-lg-1 mb-4"><img src="img/Sanctum_Logo_White_Circle.png" width="88" height="84" alt="Logo Sanctum"></a>
+                    <h5 class="col-sm-12 text-sm-center col-lg-4 text-lg-left mb-5">Your body is a sanctuary and needs care.
+                        <br><br>
+                        Let us help you raise your awareness <br>
+                        and improve your life.
+                    </h5>
+                    <div class="col-sm-12 text-sm-center col-lg-2 text-lg-left offset-lg-1">
+                        <h5>Support</h5>
+                        <div class="d-none d-lg-block">
+                            <p><a href="">Help</a></p>
+                            <p><a href="">Faq</a></p>
+                            <p><a href="">About us</a></p>
+                            <p><a href="">Mental health resources</a></p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 text-sm-center col-lg-2 text-lg-left">
+                        <h5>Contacts</h5>
+                        <div class="d-none d-md-block">
+                            <p><a href="mailto:info@sanctum.com">info@sanctum.com</a></p>
+                            <p><a href="tel:00390254295034">+02 54295034</a></p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 text-sm-center col-lg-2 text-lg-left">
+                        <h5>Get the app</h5>
+                        <a href="https://www.apple.com/it/ios/app-store/" target="_blank"><img class="badge-store" src="img/Badge-App%20Store.png" width="908" height="268" alt="Link to App Store"></a>
+                        <a href="https://play.google.com/store/apps?gl=IT" target="_blank"><img class="badge-store" src="img/Badge-Google%20Play.png" width="908" height="268" alt="Link to Google Play"></a>
+                    </div>
+                </div>
+                <div class="row footer-2">
+                    <div class="col-sm-12 text-sm-center col-lg-3 text-lg-left mb-2">
+                        <p>©2021. Sanctum. All rights reserved</p>
+                    </div>
+                    <div class="col-sm-12 text-sm-center col-lg-6 text-lg-left mb-5">
+                        <span class="mr-4"><a href="https://www.termsfeed.com/blog/sample-terms-and-conditions-template/">Terms</a></span>
+                        <span class="mr-4"><a href="https://www.iubenda.com/it/generatore-di-privacy-e-cookie-policy?utm_source=adwords&utm_medium=ppc&utm_campaign=aw_general_italy_exact&utm_term=privacy%20policy&utm_content=269425240701&gclid=Cj0KCQjwmcWDBhCOARIsALgJ2QcJeCW9GZfQmninwHcMTdf930wRxDBI-X24a9bOzpNMG_-Rnk7xbuMaAiz7EALw_wcB">Privacy policy</a></span>
+                        <span><a href="https://www.iubenda.com/it/generatore-di-privacy-e-cookie-policy?utm_source=adwords&utm_medium=ppc&utm_campaign=aw_general_italy_exact&utm_term=privacy%20policy&utm_content=269425240701&gclid=Cj0KCQjwmcWDBhCOARIsALgJ2QcJeCW9GZfQmninwHcMTdf930wRxDBI-X24a9bOzpNMG_-Rnk7xbuMaAiz7EALw_wcB">Cookie policy</a></span>
+                    </div>
+                    <div class="col-sm-12 text-sm-center col-lg-3 justify-self-end text-lg-right">
+                        <a href="https://twitter.com/?lang=it" target="_blank"><i class="fab fa-twitter fa-2x mr-4"></i></a>
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f fa-2x mr-4"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-2x mr-4"></i></a>
+                        <a href="" target="_blank"><i class="fas fa-share-alt fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+
+
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
