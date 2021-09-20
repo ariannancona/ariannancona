@@ -566,50 +566,50 @@
     
     .folle{
        position: absolute;
-        left: 25%;
+        left: 12%;
         top: 130px;
         
     }
 
     .optical {
-        width: 85%;
+        width: 80%;
         height: auto;
         position: relative;
         top: 400px;
-        left: 10%;
+        left: 0%;
         z-index: 8888;
     }
 
     .manifesti{
-        width: 110%;
+        width: 100%;
         height: auto;
         position: absolute;
-        left: 90%;   
+        left: 50%;   
     }
     
     .camminare {
         width: 60%;
         height: auto;
         position: relative;
-        top: 480vh;
+        top: 500vh;
     }
     
     
     .row4{
         position: absolute;
-        top: 560vh;
+        top: 570vh;
     }
     
     .sanctum{
-        left: 15%;
+        left: 10%;
     }
     
     .lineeSanctum{
-        width: 120%;
+        width: 130%;
         height: auto;
         position: relative;
         z-index: 0;
-        top: -700px;
+        top: -650px;
         left: -150px;
         
     }
